@@ -1,0 +1,15 @@
+<VirtualHost *:80>
+   DocumentRoot "/var/www/sf_ipacct/web"
+   ServerName zendtest
+
+   <Directory "/var/www/sf_ipacct/web">
+       Options Indexes MultiViews FollowSymLinks
+       AllowOverride All
+       Allow from all
+   </Directory>
+
+   Alias /sf /var/www/sf_ipacct/lib/vendor/symfony/data/web/sf
+
+    
+</VirtualHost>
+

@@ -1,0 +1,202 @@
+Ignoring deprecated command-line option -pStarting - reading configuration files ...
+reread_config:  reading radiusd.conf
+Config:   including file: /etc/raddb/clients.conf
+Config:   including file: /etc/raddb/snmp.conf
+Config:   including file: /etc/raddb/eap.conf
+Config:   including file: /etc/raddb/sql.conf
+ main: prefix = "/usr"
+ main: localstatedir = "/var"
+ main: logdir = "/var/log/radius"
+ main: libdir = "/usr/lib"
+ main: radacctdir = "/var/log/radius/radacct"
+ main: hostname_lookups = no
+ main: max_request_time = 30
+ main: cleanup_delay = 5
+ main: max_requests = 1024
+ main: delete_blocked_requests = 0
+ main: port = 0
+ main: allow_core_dumps = no
+ main: log_stripped_names = no
+ main: log_file = "/var/log/radius/radius.log"
+ main: log_auth = no
+ main: log_auth_badpass = yes
+ main: log_auth_goodpass = yes
+ main: pidfile = "/var/run/radiusd/radiusd.pid"
+ main: user = "(null)"
+ main: group = "(null)"
+ main: usercollide = no
+ main: lower_user = "no"
+ main: lower_pass = "no"
+ main: nospace_user = "no"
+ main: nospace_pass = "no"
+ main: checkrad = "/usr/sbin/checkrad"
+ main: proxy_requests = no
+ security: max_attributes = 200
+ security: reject_delay = 1
+ security: status_server = no
+ main: debug_level = 0
+read_config_files:  reading dictionary
+read_config_files:  reading naslist
+Using deprecated naslist file.  Support for this will go away soon.
+read_config_files:  reading clients
+read_config_files:  reading realms
+radiusd:  entering modules setup
+Module: Library search path is /usr/lib
+Module: Loaded exec 
+ exec: wait = yes
+ exec: program = "(null)"
+ exec: input_pairs = "request"
+ exec: output_pairs = "(null)"
+ exec: packet_type = "(null)"
+rlm_exec: Wait=yes but no output defined. Did you mean output=none?
+Module: Instantiated exec (exec) 
+Module: Loaded expr 
+Module: Instantiated expr (expr) 
+Module: Loaded SQL Counter 
+ sqlcounter: counter-name = "Max-All-Session-Time"
+ sqlcounter: check-name = "Max-All-Session"
+ sqlcounter: key = "User-Name"
+ sqlcounter: sqlmod-inst = "sql"
+ sqlcounter: query = "SELECT SUM(AcctSessionTime) FROM radacct WHERE UserName='%{%k}'"
+ sqlcounter: reset = "never"
+ sqlcounter: safe-characters = "@abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.-_: /"
+rlm_sqlcounter: Counter attribute Max-All-Session-Time is number 3001
+rlm_sqlcounter: Check attribute Max-All-Session is number 3002
+rlm_sqlcounter: Current Time: 1152895437 [2006-07-14 18:43:57], Next reset 0 [2006-07-14 18:00:00]
+rlm_sqlcounter: Current Time: 1152895437 [2006-07-14 18:43:57], Prev reset 0 [2006-07-14 18:00:00]
+Module: Instantiated sqlcounter (noresetcounter) 
+Module: Loaded PAP 
+ pap: encryption_scheme = "crypt"
+Module: Instantiated pap (pap) 
+Module: Loaded CHAP 
+Module: Instantiated chap (chap) 
+Module: Loaded MS-CHAP 
+ mschap: use_mppe = yes
+ mschap: require_encryption = no
+ mschap: require_strong = no
+ mschap: with_ntdomain_hack = no
+ mschap: passwd = "(null)"
+ mschap: authtype = "MS-CHAP"
+ mschap: ntlm_auth = "(null)"
+Module: Instantiated mschap (mschap) 
+Module: Loaded preprocess 
+ preprocess: huntgroups = "/etc/raddb/huntgroups"
+ preprocess: hints = "/etc/raddb/hints"
+ preprocess: with_ascend_hack = no
+ preprocess: ascend_channels_per_line = 23
+ preprocess: with_ntdomain_hack = no
+ preprocess: with_specialix_jetstream_hack = no
+ preprocess: with_cisco_vsa_hack = no
+Module: Instantiated preprocess (preprocess) 
+Module: Loaded realm 
+ realm: format = "suffix"
+ realm: delimiter = "@"
+ realm: ignore_default = no
+ realm: ignore_null = no
+Module: Instantiated realm (suffix) 
+Module: Loaded SQL 
+ sql: driver = "rlm_sql_postgresql"
+ sql: server = "localhost"
+ sql: port = ""
+ sql: login = "postgres"
+ sql: password = "11hack11"
+ sql: radius_db = "radius"
+ sql: acct_table = "radacct"
+ sql: acct_table2 = "radacct"
+ sql: authcheck_table = "radcheck"
+ sql: authreply_table = "radreply"
+ sql: groupcheck_table = "radgroupcheck"
+ sql: groupreply_table = "radgroupreply"
+ sql: usergroup_table = "usergroup"
+ sql: nas_table = "nas"
+ sql: dict_table = "dictionary"
+ sql: sqltrace = no
+ sql: sqltracefile = "/var/log/radius/sqltrace.sql"
+ sql: readclients = yes
+ sql: deletestalesessions = yes
+ sql: num_sql_socks = 5
+ sql: sql_user_name = "%{User-Name}"
+ sql: default_user_profile = ""
+ sql: query_on_not_found = no
+ sql: authorize_check_query = "SELECT id, UserName, Attribute, Value, op           FROM radcheck           WHERE Username = '%{SQL-User-Name}'           ORDER BY id"
+ sql: authorize_reply_query = "SELECT id, UserName, Attribute, Value, op           FROM radreply           WHERE Username = '%{SQL-User-Name}'           ORDER BY id"
+ sql: authorize_group_check_query = ""
+ sql: authorize_group_reply_query = ""
+ sql: accounting_onoff_query = "UPDATE radacct SET AcctStopTime='%S', AcctSessionTime=unix_timestamp('%S') - unix_timestamp(AcctStartTime), AcctTerminateCause='%{Acct-Terminate-Cause}', AcctStopDelay = '%{Acct-Delay-Time}' WHERE AcctSessionTime=0 AND AcctStopTime=0 AND NASIPAddress= '%{NAS-IP-Address}' AND AcctStartTime <= '%S'"
+ sql: accounting_update_query = "UPDATE radacct           SET FramedIPAddress = '%{Framed-IP-Address}',           AcctSessionTime = '%{Acct-Session-Time}',           AcctInputOctets = '%{Acct-Input-Octets}',           AcctOutputOctets = '%{Acct-Output-Octets}'           WHERE AcctSessionId = '%{Acct-Session-Id}'           AND UserName = '%{SQL-User-Name}'           AND NASIPAddress= '%{NAS-IP-Address}'"
+ sql: accounting_update_query_alt = "INSERT into radacct (AcctSessionId, AcctUniqueId, UserName, Realm, NASIPAddress, NASPortId, NASPortType, AcctStartTime, AcctSessionTime, AcctAuthentic, ConnectInfo_start, AcctInputOctets, AcctOutputOctets, CalledStationId, CallingStationId, ServiceType, FramedProtocol, FramedIPAddress, AcctStartDelay) values('%{Acct-Session-Id}', '%{Acct-Unique-Session-Id}', '%{SQL-User-Name}', '%{Realm}', '%{NAS-IP-Address}', '%{NAS-Port}', '%{NAS-Port-Type}', DATE_SUB('%S',INTERVAL (%{Acct-Session-Time:-0} + %{Acct-Delay-Time:-0}) SECOND), '%{Acct-Session-Time}', '%{Acct-Authentic}', '', '%{Acct-Input-Octets}', '%{Acct-Output-Octets}', '%{Called-Station-Id}', '%{Calling-Station-Id}', '%{Service-Type}', '%{Framed-Protocol}', '%{Framed-IP-Address}', '0')"
+ sql: accounting_start_query = "INSERT into radacct (AcctSessionId, AcctUniqueId, UserName, Realm, NASIPAddress, NASPortId, NASPortType, AcctStartTime, AcctStopTime, AcctSessionTime, AcctAuthentic, ConnectInfo_start, ConnectInfo_stop, AcctInputOctets, AcctOutputOctets, CalledStationId, CallingStationId, AcctTerminateCause, ServiceType, FramedProtocol, FramedIPAddress, AcctStartDelay, AcctStopDelay) values('%{Acct-Session-Id}', '%{Acct-Unique-Session-Id}', '%{SQL-User-Name}', '%{Realm}', '%{NAS-IP-Address}', '%{NAS-Port}', '%{NAS-Port-Type}', '%S', '0', '0', '%{Acct-Authentic}', '%{Connect-Info}', '', '0', '0', '%{Called-Station-Id}', '%{Calling-Station-Id}', '', '%{Service-Type}', '%{Framed-Protocol}', '%{Framed-IP-Address}', '%{Acct-Delay-Time}', '0')"
+ sql: accounting_start_query_alt = "UPDATE radacct SET AcctStartTime = '%S', AcctStartDelay = '%{Acct-Delay-Time}', ConnectInfo_start = '%{Connect-Info}' WHERE AcctSessionId = '%{Acct-Session-Id}' AND UserName = '%{SQL-User-Name}' AND NASIPAddress = '%{NAS-IP-Address}'"
+ sql: accounting_stop_query = "UPDATE radacct SET AcctStopTime = '%S', AcctSessionTime = '%{Acct-Session-Time}', AcctInputOctets = '%{Acct-Input-Octets}', AcctOutputOctets = '%{Acct-Output-Octets}', AcctTerminateCause = '%{Acct-Terminate-Cause}', AcctStopDelay = '%{Acct-Delay-Time}', ConnectInfo_stop = '%{Connect-Info}' WHERE AcctSessionId = '%{Acct-Session-Id}' AND UserName = '%{SQL-User-Name}' AND NASIPAddress = '%{NAS-IP-Address}'"
+ sql: accounting_stop_query_alt = "INSERT into radacct (AcctSessionId, AcctUniqueId, UserName, Realm, NASIPAddress, NASPortId, NASPortType, AcctStartTime, AcctStopTime, AcctSessionTime, AcctAuthentic, ConnectInfo_start, ConnectInfo_stop, AcctInputOctets, AcctOutputOctets, CalledStationId, CallingStationId, AcctTerminateCause, ServiceType, FramedProtocol, FramedIPAddress, AcctStartDelay, AcctStopDelay) values('%{Acct-Session-Id}', '%{Acct-Unique-Session-Id}', '%{SQL-User-Name}', '%{Realm}', '%{NAS-IP-Address}', '%{NAS-Port}', '%{NAS-Port-Type}', DATE_SUB('%S', INTERVAL (%{Acct-Session-Time:-0} + %{Acct-Delay-Time:-0}) SECOND), '%S', '%{Acct-Session-Time}', '%{Acct-Authentic}', '', '%{Connect-Info}', '%{Acct-Input-Octets}', '%{Acct-Output-Octets}', '%{Called-Station-Id}', '%{Calling-Station-Id}', '%{Acct-Terminate-Cause}', '%{Service-Type}', '%{Framed-Protocol}', '%{Framed-IP-Address}', '0', '%{Acct-Delay-Time}')"
+ sql: group_membership_query = ""
+ sql: connect_failure_retry_delay = 60
+ sql: simul_count_query = "SELECT COUNT(*) FROM radacct WHERE UserName='%{SQL-User-Name}' AND AcctStopTime = 0"
+ sql: simul_verify_query = "SELECT RadAcctId, AcctSessionId, UserName, NASIPAddress, NASPortId, FramedIPAddress, CallingStationId, FramedProtocol FROM radacct WHERE UserName='%{SQL-User-Name}' AND AcctStopTime = 0"
+ sql: postauth_table = "radpostauth"
+ sql: postauth_query = "INSERT into radpostauth (id, user, pass, reply, date) values ('', '%{User-Name}', '%{User-Password:-Chap-Password}', '%{reply:Packet-Type}', NOW())"
+ sql: safe-characters = "@abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.-_: /"
+rlm_sql (sql): Driver rlm_sql_postgresql (module rlm_sql_postgresql) loaded and linked
+rlm_sql (sql): Attempting to connect to postgres@localhost:/radius
+rlm_sql (sql): starting 0
+rlm_sql (sql): Attempting to connect rlm_sql_postgresql #0
+rlm_sql (sql): Connected new DB handle, #0
+rlm_sql (sql): starting 1
+rlm_sql (sql): Attempting to connect rlm_sql_postgresql #1
+rlm_sql (sql): Connected new DB handle, #1
+rlm_sql (sql): starting 2
+rlm_sql (sql): Attempting to connect rlm_sql_postgresql #2
+rlm_sql (sql): Connected new DB handle, #2
+rlm_sql (sql): starting 3
+rlm_sql (sql): Attempting to connect rlm_sql_postgresql #3
+rlm_sql (sql): Connected new DB handle, #3
+rlm_sql (sql): starting 4
+rlm_sql (sql): Attempting to connect rlm_sql_postgresql #4
+rlm_sql (sql): Connected new DB handle, #4
+rlm_sql (sql): - generate_sql_clients
+rlm_sql (sql): Query: SELECT * FROM nas
+rlm_sql (sql): Reserving sql socket id: 4
+rlm_sql_postgresql: Status: PGRES_TUPLES_OK
+rlm_sql_postgresql: affected rows = 
+rlm_sql (sql): Read entry nasname=ipacct,shortname=gentoo primus HQ,secret=dubrovnik
+rlm_sql (sql): Adding client 192.168.100.55 (gentoo primus HQ) to clients list
+rlm_sql (sql): Read entry nasname=192.168.100.100,shortname=horebbb,secret=11hack11
+rlm_sql (sql): Adding client 192.168.100.100 (horebbb) to clients list
+rlm_sql (sql): Read entry nasname=192.168.101.55,shortname=chilli-local,secret=test
+rlm_sql (sql): Adding client 192.168.101.55 (chilli-local) to clients list
+rlm_sql (sql): Released sql socket id: 4
+Module: Instantiated sql (sql) 
+Module: Loaded Acct-Unique-Session-Id 
+ acct_unique: key = "User-Name, Acct-Session-Id, NAS-IP-Address, Client-IP-Address, NAS-Port"
+Module: Instantiated acct_unique (acct_unique) 
+Module: Loaded detail 
+ detail: detailfile = "/var/log/radius/radacct/%{Client-IP-Address}/detail-%Y%m%d"
+ detail: detailperm = 384
+ detail: dirperm = 493
+ detail: locking = no
+Module: Instantiated detail (detail) 
+Module: Loaded System 
+ unix: cache = no
+ unix: passwd = "(null)"
+ unix: shadow = "(null)"
+ unix: group = "(null)"
+ unix: radwtmp = "/var/log/radius/radwtmp"
+ unix: usegroup = no
+ unix: cache_reload = 300
+Module: Instantiated unix (unix) 
+Module: Loaded eap 
+ eap: default_eap_type = "md5"
+ eap: timer_expire = 60
+ eap: ignore_unknown_eap_types = no
+ eap: cisco_accounting_username_bug = no
+rlm_eap: Loaded and initialized type md5
+rlm_eap: Loaded and initialized type leap
+ gtc: challenge = "Password: "
+ gtc: auth_type = "PAP"
+rlm_eap: Loaded and initialized type gtc
+ mschapv2: with_ntdomain_hack = no
+rlm_eap: Loaded and initialized type mschapv2
+Module: Instantiated eap (eap) 
+Listening on authentication *:1812
+Listening on accounting *:1813
+Ready to process requests.

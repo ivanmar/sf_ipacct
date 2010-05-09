@@ -1,0 +1,54 @@
+<?php
+
+if($p_loop==0) $p_isporg=$s_id_isporg;
+if($p_loop==0) $p_ispsuborg=$s_id_ispsuborg;
+
+$arr_def=$sec->fetchAllowedDefs($acc_type,$p_isporg);
+
+if($p_loop==0) $p_definition=key($arr_def);
+
+if(count($arr_def)==0)
+{
+  $sec->systemLog(NODEF);
+  $hdr->replace('#message',NODEF);
+}
+
+$arr_tmp=$sec->fetchDefInfo($p_definition,'all');
+$i=0;
+$arr_definfo=array();
+foreach($arr_tmp as $key=>$val)
+{
+  $arr_definfo[$i]['name']=$key;
+  $arr_definfo[$i]['val']=$val;
+  $i++;
+}
+$tpl->loop(1,$arr_definfo);
+
+$exec=$base->execute('sel_ispsuborg',array($p_isporg));
+$rows=$base->fetchAll();
+$arr_suborg=array();
+foreach($rows as $record)
+{
+	$id=$record['id'];
+	$name=$record['suborgname'];
+	$arr_suborg[$id]=$name;
+}
+if(count($arr_suborg)==0)
+  $hdr->replace('#message',NOORG);
+
+$arr_radloc=array();
+if($s_id_user==1)
+  $arr_radloc[]='check_off';
+$base->execute('sel_radloc_isp',array($p_isporg));
+$row=$base->fetch();
+$arr_radloc[]=$row['radlocation'];
+$base->execute('sel_radloc_sub',array($p_isporg));
+$rows=$base->fetchAll();
+foreach($rows as $record)
+	$arr_radloc[]=$record['radlocation'];
+
+$tpl->dropDown('#radlocation',$arr_radloc,$p_radlocation,false);
+$tpl->dropDown('#ispsuborg',$arr_suborg,$p_ispsuborg,true);
+$tpl->dropDown('#definition',$arr_def,$p_definition,true); 
+
+?>

@@ -1,0 +1,206 @@
+* {
+margin: 0px;
+padding: 0px;
+}
+body {
+	background: #171717;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #ccc;
+}
+a {
+	text-decoration: none;
+}
+
+h1.data_header {
+	font: bold 12px Arial, Tahoma, Sans-serif;
+	color: #777;
+	border: 2px solid #692FAC;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	text-transform: uppercase;
+	margin : 12px;
+}
+
+#header{
+	height: 75px;
+	width: 635px;
+	margin: 0 auto;
+	margin-top: 20px;
+	background: url(images/logo-primus.png) left no-repeat;
+}
+
+#wrap {
+	width: 635px;
+	margin: 0 auto;
+	padding: 0;
+	background: center url(images/cmid.png) repeat-y;
+}
+
+/* Nav */
+
+#nav {
+	position: relative;
+	width: 635px;
+	margin: 0 auto;
+}
+
+#nbar {
+	width: auto;
+	height: 25px;
+	background: #222;
+	margin: 0;
+	padding : 0;
+	font: bold 12px/25px Verdana, Arial, Tahoma, Sans-serif;
+}
+
+#nbar ul {
+	float: right;
+	list-style : none;
+	margin: 0;
+	padding: 0;
+}
+
+#nbar li {
+	display: inline;
+}
+
+#nbar li a {
+	display: block;
+	float: left;
+	padding: 0 10px;
+	color: #E5E5E5;
+	border-left: 1px #000 solid;
+}
+
+#nbar li a:hover {
+	background: #692FAC;
+}
+
+#nbar li.selected a {
+	background: #692FAC;
+}
+
+
+/* Content */
+
+#contentwrap {
+	width: 635px;
+	margin: 0 auto;
+}
+
+#ctop {
+	background: url(images/ctop.png) center no-repeat;
+	height: 28px;
+}
+
+
+#content-wrap-bottom {
+	background: url(images/cbott.png) center no-repeat;
+	height: 28px;
+	text-align: center;
+	font : bold 10px Arial, Sans-serif;
+	color : #444;
+}
+
+#content {
+	width: 605px;
+	padding: 15px 15px 0;
+}
+
+
+
+
+img {
+	border: 0;
+}
+
+form {
+	margin : 10px;
+	padding : 10px;
+	border : 1px solid #333;
+	background-color : #111;
+	text-align: left;
+}
+
+label {
+	display : block;
+	margin-left: 40px;
+	margin-top: 10px;
+	font: bold 12px Arial, sans-serif;
+	color: #777;
+}
+
+input {
+	padding : 2px;
+	margin-left: 140px;
+	border : 1px solid #333;
+	font : normal 12px Arial, sans-serif;
+	color : #ccc;
+	background-color : #222;
+}
+select{ 
+	padding : 2px;
+	border : 1px solid #333;
+	font : normal 12px Arial, sans-serif;
+	color : #ccc;
+	background-color : #222;
+}
+textarea {
+	width : 400px;
+	padding : 2px;
+	font : normal 12px Arial, sans-serif;
+	border : 1px solid #333;
+	background-color: #222;
+	height : 100px;
+	display : block;
+	color : #dddddd;
+}
+
+input.button {
+	margin-left : 460px;
+	font: bold 12px Arial, sans-serif;
+	border: 1px solid #692FAC;
+	padding-left: 4px;
+	padding-right: 4px;
+	background : #111;
+	color : #555;
+	text-transform: uppercase;
+}
+input.button:hover { 
+	color : #888;
+}
+
+.clearfix {
+	clear: both;
+	overflow: hidden;
+}
+
+.tabcontentstyle {
+	margin: 0 auto;
+}
+
+.tabcontent {
+	font : 12px Arial, Sans-serif;
+	color : #555;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: right;
+	display:none;
+}
+#stat {
+	border: 2px solid #692FAC;
+	padding: 2px;
+	margin: 0px 5px 0px 5px;
+	text-align: center;
+	color:#888;
+	font : 10px Arial, Sans-serif;
+}
+.msg {
+	color:#777;
+	text-align: center;
+	font : 10px Arial, Sans-serif;
+}
+
+

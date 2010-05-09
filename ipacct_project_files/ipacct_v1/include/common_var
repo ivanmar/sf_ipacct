@@ -1,0 +1,21 @@
+<?php
+
+$s_id_user	= $session['id'];
+$s_id_isporg	= $session['id_isporg'];
+$s_username	= trim($session['username']);
+$s_ispname	= trim($session['orgname']);
+$s_id_ispsuborg	= $session['id_ispsuborg'];
+$s_lang		= $session['lang'];
+$s_logininfo	= $s_username.' / '.$s_ispname;
+$s_usertype	= trim($session['acctype']);
+$version	= $sec->getGlobal('version');
+$build		= $sec->getGlobal('build');
+
+$tpl->replace('#formaction',$_SERVER['PHP_SELF']);
+$hdr->replace('#version',"$version (build $build)");
+$hdr->replace('#date',$datnow);
+$hdr->replace('#logininfo',$s_logininfo);
+
+$hdr->menu($s_usertype);
+
+?> 
