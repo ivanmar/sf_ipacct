@@ -1,0 +1,1298 @@
+AccAccseries:
+  connection: doctrine
+  tableName: acc_accseries
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: acc_accseries_id
+    id_usagedefinition:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    id_isporg:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    id_systemuser:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    crdate:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    nraccount:
+      type: decimal(18)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    acctype:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    pst_commission:
+      type: decimal(18)
+      fixed: false
+      unsigned: false
+      notnull: false
+      default: '0'
+      primary: false
+    id_ispsuborg:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+  relations:
+    AccIsporg:
+      local: id_isporg
+      foreign: id
+      type: one
+    AccUsagedefinition:
+      local: id_usagedefinition
+      foreign: id
+      type: one
+    AccSystemuser:
+      local: id_systemuser
+      foreign: id
+      type: one
+    AccIspsuborg:
+      local: id_ispsuborg
+      foreign: id
+      type: one
+    AccPostpaccount:
+      local: id
+      foreign: id_accseries
+      type: many
+    AccPrepaccount:
+      local: id
+      foreign: id_accseries
+      type: many
+    AccSubscriberinfo:
+      local: id
+      foreign: id_accseries
+      type: many
+    Radcheck:
+      local: id
+      foreign: id_accseries
+      type: many
+AccIsporg:
+  connection: doctrine
+  tableName: acc_isporg
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: acc_isporg_id
+    name:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    address:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    city:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    zipcode:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    phone:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    billinginfo:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    contactname:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    email_report:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    email_nasadmin:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    pst_commission:
+      type: decimal(18)
+      fixed: false
+      unsigned: false
+      notnull: false
+      default: '0'
+      primary: false
+    radlocation:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+  relations:
+    AccAccseries:
+      local: id
+      foreign: id_isporg
+      type: many
+    AccIspsuborg:
+      local: id
+      foreign: id_isporg
+      type: many
+    AccPostpaccount:
+      local: id
+      foreign: id_isporg
+      type: many
+    AccPrepaccount:
+      local: id
+      foreign: id_isporg
+      type: many
+    AccSystemuser:
+      local: id
+      foreign: id_isporg
+      type: many
+    AccUsagedefinition:
+      local: id
+      foreign: id_isporg
+      type: many
+    Nas:
+      local: id
+      foreign: id_isporg
+      type: many
+AccIspsuborg:
+  connection: doctrine
+  tableName: acc_ispsuborg
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: acc_ispsuborg_id
+    name:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    id_isporg:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    address:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    city:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    zipcode:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    phone:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    email:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    contactname:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    radlocation:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+  relations:
+    AccIsporg:
+      local: id_isporg
+      foreign: id
+      type: one
+    AccAccseries:
+      local: id
+      foreign: id_ispsuborg
+      type: many
+    AccPostpaccount:
+      local: id
+      foreign: id_ispsuborg
+      type: many
+    AccPrepaccount:
+      local: id
+      foreign: id_ispsuborg
+      type: many
+    AccSystemuser:
+      local: id
+      foreign: id_ispsuborg
+      type: many
+    Nas:
+      local: id
+      foreign: id_ispsuborg
+      type: many
+AccPostpaccount:
+  connection: doctrine
+  tableName: acc_postpaccount
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: acc_postpaccount_id
+    username:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    id_isporg:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    id_ispsuborg:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    id_accseries:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    ind_active:
+      type: string()
+      fixed: true
+      unsigned: false
+      notnull: false
+      default: '0'
+      primary: false
+  relations:
+    AccAccseries:
+      local: id_accseries
+      foreign: id
+      type: one
+    AccIsporg:
+      local: id_isporg
+      foreign: id
+      type: one
+    AccIspsuborg:
+      local: id_ispsuborg
+      foreign: id
+      type: one
+    AccPostpaccountlog:
+      local: id
+      foreign: id_postpaccount
+      type: many
+AccPostpaccountlog:
+  connection: doctrine
+  tableName: acc_postpaccountlog
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: acc_postpaccountlog_id
+    id_postpaccount:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    srvstarttime:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    srvstoptime:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    timespent:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      notnull: false
+      default: '0'
+      primary: false
+    trafficspent:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      notnull: false
+      default: '0'
+      primary: false
+    id_systemuser:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    s_bill:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    accountinfo:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    id_usagedefinition:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+  relations:
+    AccPostpaccount:
+      local: id_postpaccount
+      foreign: id
+      type: one
+    AccSystemuser:
+      local: id_systemuser
+      foreign: id
+      type: one
+    AccUsagedefinition:
+      local: id_usagedefinition
+      foreign: id
+      type: one
+AccPrepaccount:
+  connection: doctrine
+  tableName: acc_prepaccount
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: acc_prepaccount_id
+    username:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    id_accseries:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    id_isporg:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    id_ispsuborg:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    id_systemuser:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    s_card:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    dateissue:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    datesale:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    datestorn:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    ind_ondemand:
+      type: string()
+      fixed: true
+      unsigned: false
+      notnull: false
+      primary: false
+    datefirstuse:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    datelastuse:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    trafficspent:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    nrsession:
+      type: decimal(18)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    ind_used:
+      type: string()
+      fixed: true
+      unsigned: false
+      notnull: false
+      primary: false
+    timespent:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+  relations:
+    AccAccseries:
+      local: id_accseries
+      foreign: id
+      type: one
+    AccIsporg:
+      local: id_isporg
+      foreign: id
+      type: one
+    AccIspsuborg:
+      local: id_ispsuborg
+      foreign: id
+      type: one
+    AccSystemuser:
+      local: id_systemuser
+      foreign: id
+      type: one
+AccSubscriberinfo:
+  connection: doctrine
+  tableName: acc_subscriberinfo
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: acc_subscriberinfo_id
+    username:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    name:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    id_isporg:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    address:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    city:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    phone:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    email:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    id_accseries:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+  relations:
+    AccAccseries:
+      local: id_accseries
+      foreign: id
+      type: one
+AccSystemuser:
+  connection: doctrine
+  tableName: acc_systemuser
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: acc_systemuser_id
+    username:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    pass:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    acctype:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    id_isporg:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    id_ispsuborg:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    name:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    email:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    phone:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    mobile:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    lang:
+      type: string()
+      fixed: true
+      unsigned: false
+      notnull: false
+      primary: false
+  relations:
+    AccIsporg:
+      local: id_isporg
+      foreign: id
+      type: one
+    AccIspsuborg:
+      local: id_ispsuborg
+      foreign: id
+      type: one
+    AccAccseries:
+      local: id
+      foreign: id_systemuser
+      type: many
+    AccPostpaccountlog:
+      local: id
+      foreign: id_systemuser
+      type: many
+    AccPrepaccount:
+      local: id
+      foreign: id_systemuser
+      type: many
+AccUsagedefinition:
+  connection: doctrine
+  tableName: acc_usagedefinition
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: acc_usagedefinition_id
+    id_isporg:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: '0'
+      primary: false
+    definitionname:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    acctype:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    measureunit:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    billingunit:
+      type: decimal(18)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    pricebillingunit:
+      type: decimal(18)
+      fixed: false
+      unsigned: false
+      notnull: false
+      default: '0'
+      primary: false
+    priceonstart:
+      type: decimal(18)
+      fixed: false
+      unsigned: false
+      notnull: false
+      default: '0'
+      primary: false
+  relations:
+    AccIsporg:
+      local: id_isporg
+      foreign: id
+      type: one
+    AccAccseries:
+      local: id
+      foreign: id_usagedefinition
+      type: many
+    AccPostpaccountlog:
+      local: id
+      foreign: id_usagedefinition
+      type: many
+Nas:
+  connection: doctrine
+  tableName: nas
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: nas_id
+    nasname:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    shortname:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    type:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: other
+      primary: false
+    ports:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    secret:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    community:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    description:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    id_isporg:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    pacc_nasipaddress:
+      type: inet()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    pacc_conn_user:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    pacc_conn_pass:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    pacc_admin_user:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    pacc_admin_pass:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    id_ispsuborg:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    pacc_macaddress:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    pacc_ssid:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    pacc_radlocation:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    pacc_adminport:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+  relations:
+    AccIsporg:
+      local: id_isporg
+      foreign: id
+      type: one
+    AccIspsuborg:
+      local: id_ispsuborg
+      foreign: id
+      type: one
+Radacct:
+  connection: doctrine
+  tableName: radacct
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: radacct_radacctid
+    acctsessionid:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    acctuniqueid:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    username:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    groupname:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    realm:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    nasipaddress:
+      type: inet()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    nasportid:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    nasporttype:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    acctstarttime:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    acctstoptime:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    acctsessiontime:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    acctauthentic:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    connectinfo_start:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    connectinfo_stop:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    acctinputoctets:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      notnull: false
+      default: '0'
+      primary: false
+    acctoutputoctets:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      notnull: false
+      default: '0'
+      primary: false
+    calledstationid:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    callingstationid:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    acctterminatecause:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    servicetype:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    framedprotocol:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    framedipaddress:
+      type: inet()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    acctstartdelay:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    acctstopdelay:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    xascendsessionsvrkey:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+Radcheck:
+  connection: doctrine
+  tableName: radcheck
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: radcheck_id
+    username:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: ''
+      primary: false
+    attr:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: ''
+      primary: false
+    op:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: '=='
+      primary: false
+    value:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: ''
+      primary: false
+    id_accseries:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+  relations:
+    AccAccseries:
+      local: id_accseries
+      foreign: id
+      type: one
+Radgroupcheck:
+  connection: doctrine
+  tableName: radgroupcheck
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: radgroupcheck_id
+    groupname:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: ''
+      primary: false
+    attr:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: ''
+      primary: false
+    op:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: '=='
+      primary: false
+    value:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: ''
+      primary: false
+Radgroupreply:
+  connection: doctrine
+  tableName: radgroupreply
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: radgroupreply_id
+    groupname:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: ''
+      primary: false
+    attr:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: ''
+      primary: false
+    op:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: '='
+      primary: false
+    value:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: ''
+      primary: false
+Radpostauth:
+  connection: doctrine
+  tableName: radpostauth
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: radpostauth_id
+    username:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    pass:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    reply:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    calledstationid:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    callingstationid:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    authdate:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: '''2006-07-18 14:36:09.068453+02''::timestamp with time zone'
+      primary: false
+Radreply:
+  connection: doctrine
+  tableName: radreply
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: radreply_id
+    username:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: ''
+      primary: false
+    attr:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: ''
+      primary: false
+    op:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: '='
+      primary: false
+    value:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: ''
+      primary: false
+Radusergroup:
+  connection: doctrine
+  tableName: radusergroup
+  columns:
+    id:
+      type: integer(8)
+      autoincrement: true
+      primary: true
+    username:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: ''
+      primary: false
+    groupname:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: ''
+      primary: false
+    priority:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      notnull: true
+      default: '0'
+      primary: false
