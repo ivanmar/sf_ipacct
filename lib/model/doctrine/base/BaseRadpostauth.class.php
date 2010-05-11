@@ -93,7 +93,6 @@ abstract class BaseRadpostauth extends sfDoctrineRecord
              'fixed' => 0,
              'unsigned' => false,
              'notnull' => true,
-             'default' => '\'2006-07-18 14:36:09.068453+02\'::timestamp with time zone',
              'primary' => false,
              'length' => 25,
              ));

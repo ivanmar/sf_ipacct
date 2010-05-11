@@ -1033,7 +1033,7 @@ CREATE TABLE radpostauth (
     reply character varying(32),
     calledstationid character varying(50),
     callingstationid character varying(50),
-    authdate timestamp with time zone DEFAULT '2006-07-18 14:36:09.068453+02'::timestamp with time zone NOT NULL
+    authdate timestamp NOT NULL
 );
 
 
