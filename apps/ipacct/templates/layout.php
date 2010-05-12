@@ -61,6 +61,15 @@
   </div>
 </div>
 
+<script type="text/javascript">initalizetab("maintab")</script>
+
+<div id="contentwrap">
+ <div id="ctop"></div>
+  <div id="wrap">
+
+
+<script type="text/javascript">initalizetab("maintab")</script>
+
 
       <div id="content">
         <?php if ($sf_user->hasFlash('notice')): ?>
@@ -80,13 +89,14 @@
         </div>
       </div>
 
-
+        <p>&nbsp;</p>
+      </div>
+  </div>
 
   <!--End contenwrap-->
   <div id="content-wrap-bottom"> &copy; 2009 <strong>primus net</strong> </div>
   <div class="clearfix"></div>
-</div>
-<!--End Wrap -->
+
 <div class="clearfix"></div>
 </body>
 </html>

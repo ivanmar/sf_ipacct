@@ -5,7 +5,9 @@ body {
 	font: 12px Arial, Tahoma, Sans-serif;
 	color: #ccc;
 }
-a { text-decoration: none; color: #ff4f4f;}
+a { 	text-decoration: none; 
+	color: #ff4f4f; }
+
 table { border: 0; padding : 0 15px; }
 
 #header{
@@ -28,15 +30,6 @@ table.data {
 	border-spacing: 2px;
 }
 
-th.table_header {
-	color: #777;
-	border: 1px solid #692FAC;
-	margin-top: 10px;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	text-align: center;
-	text-transform: uppercase;
-}
 tr.col_header {
 	font: bold 12px Arial, Tahoma, Sans-serif;
 	text-transform: lowercase;
@@ -137,7 +130,14 @@ table.formhold {
 
 #content {
 	width: 905px;
-	padding: 15px 15px 0;
+	padding: 0 15px 0;
+}
+#content_menu {
+	width: 905px;
+	padding: 0 15px 0;
+	text-align: left;
+	font: normal 12px Arial, Tahoma, Sans-serif;
+	color: #ff4f4f
 }
 #login {
 	width: 500px;
@@ -242,7 +242,6 @@ input.logoimg {
 }
 
 /* Nav */
-
 
 .navtab {
 	position: relative;

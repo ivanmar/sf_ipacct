@@ -1,4 +1,10 @@
-<table>
+<div id='content_menu'> 
+  <a href="<?php echo url_for('isporg/edit?id='.$acc_isporg->getId()) ?>">edit</a> &nbsp;
+  <a href="<?php echo url_for('isporg/index') ?>">list</a>
+</div>
+
+
+<table class='data'>
   <tbody>
     <tr>
       <th>Id:</th>
@@ -53,6 +59,4 @@
 
 <hr />
 
-<a href="<?php echo url_for('isporg/edit?id='.$acc_isporg->getId()) ?>">Edit</a>
-&nbsp;
-<a href="<?php echo url_for('isporg/index') ?>">List</a>
+
