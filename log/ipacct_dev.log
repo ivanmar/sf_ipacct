@@ -304,3 +304,334 @@ May 11 14:25:08 symfony [info] {sfWebDebugLogger} Action "isporg/index" 31.83 ms
 May 11 14:25:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
 May 11 14:25:08 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 10.87 ms (1)
 May 11 14:25:08 symfony [info] {sfWebResponse} Send content (31438 o)
+May 11 19:47:41 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 11 19:47:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 11 19:47:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 11 19:47:41 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 11 19:47:41 symfony [err] {Doctrine_Connection_Exception} PDO Connection Error: SQLSTATE[08006] [7] FATAL:  no pg_hba.conf entry for host "::1", user "postgres", database "ipacct_radius", SSL on
+FATAL:  no pg_hba.conf entry for host "::1", user "postgres", database "ipacct_radius", SSL off
+May 11 19:47:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+May 11 19:47:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 11 19:47:41 symfony [info] {sfWebDebugLogger} Configuration 352.45 ms (8)
+May 11 19:47:41 symfony [info] {sfWebDebugLogger} Factories 248.42 ms (1)
+May 11 19:47:41 symfony [info] {sfWebDebugLogger} Action "isporg/index" 398.18 ms (1)
+May 11 19:50:33 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 11 19:50:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 11 19:50:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 11 19:50:33 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 11 19:50:33 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 11 19:50:33 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 11 19:50:33 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 11 19:50:33 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 11 19:50:33 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 11 19:50:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 11 19:50:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 11 19:50:33 symfony [info] {sfWebDebugLogger} Configuration 34.82 ms (10)
+May 11 19:50:33 symfony [info] {sfWebDebugLogger} Factories 90.94 ms (1)
+May 11 19:50:33 symfony [info] {sfWebDebugLogger} Action "isporg/index" 352.17 ms (1)
+May 11 19:50:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+May 11 19:50:33 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 71.92 ms (1)
+May 11 19:50:33 symfony [info] {sfWebResponse} Send content (31215 o)
+May 12 01:21:56 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 12 01:21:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 12 01:21:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 12 01:21:57 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 12 01:21:58 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 12 01:21:58 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 12 01:21:58 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 12 01:21:58 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:21:58 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:21:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 12 01:21:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 12 01:21:58 symfony [info] {sfWebDebugLogger} Configuration 102.24 ms (10)
+May 12 01:21:58 symfony [info] {sfWebDebugLogger} Factories 528.27 ms (1)
+May 12 01:21:58 symfony [info] {sfWebDebugLogger} Action "isporg/index" 1091.04 ms (1)
+May 12 01:21:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+May 12 01:21:58 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 382.39 ms (1)
+May 12 01:21:58 symfony [info] {sfWebResponse} Send content (33259 o)
+May 12 01:26:24 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 12 01:26:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 12 01:26:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 12 01:26:24 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 12 01:26:24 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 12 01:26:24 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 12 01:26:24 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 12 01:26:24 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:26:24 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:26:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 12 01:26:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 12 01:26:24 symfony [info] {sfWebDebugLogger} Configuration 4.03 ms (9)
+May 12 01:26:24 symfony [info] {sfWebDebugLogger} Factories 69.05 ms (1)
+May 12 01:26:24 symfony [info] {sfWebDebugLogger} Action "isporg/index" 247.75 ms (1)
+May 12 01:26:24 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+May 12 01:26:24 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 39.55 ms (1)
+May 12 01:26:24 symfony [info] {sfWebResponse} Send content (33563 o)
+May 12 01:27:09 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 12 01:27:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 12 01:27:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 12 01:27:09 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 12 01:27:09 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 12 01:27:09 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 12 01:27:09 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 12 01:27:09 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:27:09 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:27:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 12 01:27:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 12 01:27:09 symfony [info] {sfWebDebugLogger} Configuration 34.66 ms (10)
+May 12 01:27:09 symfony [info] {sfWebDebugLogger} Factories 72.19 ms (1)
+May 12 01:27:09 symfony [info] {sfWebDebugLogger} Action "isporg/index" 243.10 ms (1)
+May 12 01:27:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+May 12 01:27:09 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 74.20 ms (1)
+May 12 01:27:09 symfony [info] {sfWebResponse} Send content (33404 o)
+May 12 01:28:04 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 12 01:28:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 12 01:28:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 12 01:28:04 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 12 01:28:04 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 12 01:28:04 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 12 01:28:05 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 12 01:28:05 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:28:05 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:28:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 12 01:28:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 12 01:28:05 symfony [info] {sfWebDebugLogger} Configuration 35.82 ms (10)
+May 12 01:28:05 symfony [info] {sfWebDebugLogger} Factories 72.14 ms (1)
+May 12 01:28:05 symfony [info] {sfWebDebugLogger} Action "isporg/index" 247.36 ms (1)
+May 12 01:28:05 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+May 12 01:28:05 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 74.70 ms (1)
+May 12 01:28:05 symfony [info] {sfWebResponse} Send content (33651 o)
+May 12 01:40:41 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 12 01:40:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 12 01:40:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 12 01:40:41 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 12 01:40:41 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 12 01:40:41 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 12 01:40:41 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 12 01:40:41 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:40:41 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:40:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 12 01:40:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 12 01:40:41 symfony [info] {sfWebDebugLogger} Configuration 4.48 ms (9)
+May 12 01:40:41 symfony [info] {sfWebDebugLogger} Factories 66.63 ms (1)
+May 12 01:40:41 symfony [info] {sfWebDebugLogger} Action "isporg/index" 240.10 ms (1)
+May 12 01:40:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+May 12 01:40:41 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 38.96 ms (1)
+May 12 01:40:41 symfony [info] {sfWebResponse} Send content (33756 o)
+May 12 01:49:18 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 12 01:49:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 12 01:49:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 12 01:49:18 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 12 01:49:18 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 12 01:49:18 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 12 01:49:18 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 12 01:49:18 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:49:18 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:49:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 12 01:49:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 12 01:49:18 symfony [info] {sfWebDebugLogger} Configuration 3.94 ms (9)
+May 12 01:49:18 symfony [info] {sfWebDebugLogger} Factories 99.03 ms (1)
+May 12 01:49:18 symfony [info] {sfWebDebugLogger} Action "isporg/index" 263.56 ms (1)
+May 12 01:49:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+May 12 01:49:18 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 39.40 ms (1)
+May 12 01:49:18 symfony [info] {sfWebResponse} Send content (33637 o)
+May 12 01:49:30 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 12 01:49:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 12 01:49:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 12 01:49:30 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 12 01:49:30 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 12 01:49:30 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 12 01:49:30 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 12 01:49:30 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:49:30 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:49:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 12 01:49:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 12 01:49:30 symfony [info] {sfWebDebugLogger} Configuration 3.92 ms (9)
+May 12 01:49:30 symfony [info] {sfWebDebugLogger} Factories 72.23 ms (1)
+May 12 01:49:30 symfony [info] {sfWebDebugLogger} Action "isporg/index" 243.05 ms (1)
+May 12 01:49:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+May 12 01:49:30 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 40.16 ms (1)
+May 12 01:49:30 symfony [info] {sfWebResponse} Send content (33637 o)
+May 12 01:51:07 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 12 01:51:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 12 01:51:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 12 01:51:07 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 12 01:51:08 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 12 01:51:08 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 12 01:51:08 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 12 01:51:08 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:51:08 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:51:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 12 01:51:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 12 01:51:08 symfony [info] {sfWebDebugLogger} Configuration 3.97 ms (9)
+May 12 01:51:08 symfony [info] {sfWebDebugLogger} Factories 70.68 ms (1)
+May 12 01:51:08 symfony [info] {sfWebDebugLogger} Action "isporg/index" 239.72 ms (1)
+May 12 01:51:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+May 12 01:51:08 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 41.51 ms (1)
+May 12 01:51:08 symfony [info] {sfWebResponse} Send content (33637 o)
+May 12 01:51:10 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 12 01:51:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 12 01:51:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 12 01:51:10 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 12 01:51:10 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 12 01:51:10 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 12 01:51:10 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 12 01:51:10 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:51:10 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:51:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 12 01:51:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 12 01:51:10 symfony [info] {sfWebDebugLogger} Configuration 3.90 ms (9)
+May 12 01:51:10 symfony [info] {sfWebDebugLogger} Factories 67.64 ms (1)
+May 12 01:51:10 symfony [info] {sfWebDebugLogger} Action "isporg/index" 242.41 ms (1)
+May 12 01:51:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+May 12 01:51:10 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 38.75 ms (1)
+May 12 01:51:10 symfony [info] {sfWebResponse} Send content (33637 o)
+May 12 01:52:40 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 12 01:52:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 12 01:52:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 12 01:52:40 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 12 01:52:40 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 12 01:52:40 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 12 01:52:40 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 12 01:52:40 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:52:40 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:52:58 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 12 01:52:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 12 01:52:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 12 01:52:58 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 12 01:52:58 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 12 01:52:58 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 12 01:52:58 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 12 01:52:58 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:52:58 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:52:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 12 01:52:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 12 01:52:58 symfony [info] {sfWebDebugLogger} Configuration 3.88 ms (9)
+May 12 01:52:58 symfony [info] {sfWebDebugLogger} Factories 67.75 ms (1)
+May 12 01:52:58 symfony [info] {sfWebDebugLogger} Action "isporg/index" 232.27 ms (1)
+May 12 01:52:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+May 12 01:52:58 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 39.84 ms (1)
+May 12 01:52:58 symfony [info] {sfWebResponse} Send content (33756 o)
+May 12 01:56:48 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 12 01:56:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 12 01:56:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 12 01:56:48 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 12 01:56:48 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 12 01:56:48 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 12 01:56:48 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 12 01:56:48 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:56:48 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 01:56:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 12 01:56:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 12 01:56:48 symfony [info] {sfWebDebugLogger} Configuration 3.99 ms (9)
+May 12 01:56:48 symfony [info] {sfWebDebugLogger} Factories 97.46 ms (1)
+May 12 01:56:48 symfony [info] {sfWebDebugLogger} Action "isporg/index" 235.87 ms (1)
+May 12 01:56:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+May 12 01:56:48 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 40.45 ms (1)
+May 12 01:56:48 symfony [info] {sfWebResponse} Send content (33756 o)
+May 12 02:00:06 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 12 02:00:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 12 02:00:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 12 02:00:06 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 12 02:00:06 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 12 02:00:06 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 12 02:00:06 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 12 02:00:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 12 02:00:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 12 02:00:06 symfony [info] {sfWebDebugLogger} Configuration 346.95 ms (9)
+May 12 02:00:06 symfony [info] {sfWebDebugLogger} Factories 248.76 ms (1)
+May 12 02:00:06 symfony [info] {sfWebDebugLogger} Action "isporg/index" 243.98 ms (1)
+May 12 02:00:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+May 12 02:00:06 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 39.83 ms (1)
+May 12 02:00:06 symfony [info] {sfWebResponse} Send content (20874 o)
+May 12 02:00:09 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 12 02:00:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 12 02:00:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 12 02:00:09 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 12 02:00:09 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 12 02:00:09 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 12 02:00:09 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 12 02:00:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 12 02:00:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 12 02:00:10 symfony [info] {sfWebDebugLogger} Configuration 4.14 ms (9)
+May 12 02:00:10 symfony [info] {sfWebDebugLogger} Factories 66.80 ms (1)
+May 12 02:00:10 symfony [info] {sfWebDebugLogger} Action "isporg/index" 232.21 ms (1)
+May 12 02:00:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+May 12 02:00:10 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 35.37 ms (1)
+May 12 02:00:10 symfony [info] {sfWebResponse} Send content (20870 o)
+May 12 02:00:55 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 12 02:00:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 12 02:00:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 12 02:00:55 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 12 02:00:55 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 12 02:00:55 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 12 02:00:55 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 12 02:00:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 12 02:00:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 12 02:00:55 symfony [info] {sfWebDebugLogger} Configuration 3.84 ms (9)
+May 12 02:00:55 symfony [info] {sfWebDebugLogger} Factories 71.75 ms (1)
+May 12 02:00:55 symfony [info] {sfWebDebugLogger} Action "isporg/index" 244.00 ms (1)
+May 12 02:00:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+May 12 02:00:55 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 36.70 ms (1)
+May 12 02:00:55 symfony [info] {sfWebResponse} Send content (20870 o)
+May 12 02:00:57 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 12 02:00:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 12 02:00:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 12 02:00:57 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 12 02:00:57 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 12 02:00:57 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 12 02:00:57 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 12 02:00:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 12 02:00:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 12 02:00:58 symfony [info] {sfWebDebugLogger} Configuration 3.93 ms (9)
+May 12 02:00:58 symfony [info] {sfWebDebugLogger} Factories 66.18 ms (1)
+May 12 02:00:58 symfony [info] {sfWebDebugLogger} Action "isporg/index" 258.57 ms (1)
+May 12 02:00:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+May 12 02:00:58 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 37.68 ms (1)
+May 12 02:00:58 symfony [info] {sfWebResponse} Send content (20870 o)
+May 12 02:00:59 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 12 02:00:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 12 02:00:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 12 02:00:59 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 12 02:00:59 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 12 02:00:59 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 12 02:00:59 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 12 02:00:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 12 02:00:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 12 02:00:59 symfony [info] {sfWebDebugLogger} Configuration 4.02 ms (9)
+May 12 02:00:59 symfony [info] {sfWebDebugLogger} Factories 63.84 ms (1)
+May 12 02:00:59 symfony [info] {sfWebDebugLogger} Action "isporg/index" 231.27 ms (1)
+May 12 02:00:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+May 12 02:00:59 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 36.93 ms (1)
+May 12 02:00:59 symfony [info] {sfWebResponse} Send content (20870 o)
+May 12 02:01:11 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 12 02:01:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 12 02:01:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 12 02:01:11 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 12 02:01:12 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 12 02:01:12 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 12 02:01:12 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 12 02:01:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 12 02:01:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 12 02:01:12 symfony [info] {sfWebDebugLogger} Configuration 340.22 ms (9)
+May 12 02:01:12 symfony [info] {sfWebDebugLogger} Factories 239.14 ms (1)
+May 12 02:01:12 symfony [info] {sfWebDebugLogger} Action "isporg/index" 236.50 ms (1)
+May 12 02:01:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+May 12 02:01:12 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 36.64 ms (1)
+May 12 02:01:12 symfony [info] {sfWebResponse} Send content (20874 o)
+May 12 02:03:24 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 12 02:03:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 12 02:03:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 12 02:03:24 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 12 02:03:24 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 12 02:03:24 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 12 02:03:24 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 12 02:03:24 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 02:03:24 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 12 02:03:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 12 02:03:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 12 02:03:24 symfony [info] {sfWebDebugLogger} Configuration 355.29 ms (9)
+May 12 02:03:24 symfony [info] {sfWebDebugLogger} Factories 247.16 ms (1)
+May 12 02:03:24 symfony [info] {sfWebDebugLogger} Action "isporg/index" 243.04 ms (1)
+May 12 02:03:24 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+May 12 02:03:24 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 46.50 ms (1)
+May 12 02:03:24 symfony [info] {sfWebResponse} Send content (33501 o)

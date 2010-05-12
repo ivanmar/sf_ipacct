@@ -1,0 +1,286 @@
+* { margin: 0px; padding: 0px; }
+body {
+	background: #171717;
+	text-align: justify;
+	font: 12px Arial, Tahoma, Sans-serif;
+	color: #ccc;
+}
+a { text-decoration: none; color: #ff4f4f;}
+table { border: 0; padding : 0 15px; }
+
+#header{
+	height: 75px;
+	width: 935px;
+	margin: 0 auto;
+	background: url(../images/logo-primus.png) left no-repeat;
+}
+
+#wrap {
+	width: 935px;
+	margin: 0 auto;
+	padding: 0;
+	background: center url(../images/cmid.png) repeat-y;
+}
+
+table.data {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 2px;
+}
+
+th.table_header {
+	color: #777;
+	border: 1px solid #692FAC;
+	margin-top: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: center;
+	text-transform: uppercase;
+}
+tr.col_header {
+	font: bold 12px Arial, Tahoma, Sans-serif;
+	text-transform: lowercase;
+	text-align: center;
+	color: #777;
+	background-color : #111;
+	height: 20px;
+}
+tr.data_rows {
+	color: #ccc;
+	text-transform: lowercase;
+	background: #333233;
+	text-align: center;
+	height: 20px;
+}
+tr.data_rows:hover {
+	color: #fff;
+	background: #585858;
+}
+h1.data_header {
+	font: bold 12px Arial, Tahoma, Sans-serif;
+	color: #777;
+	border: 1px solid #692FAC;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	text-transform: uppercase;
+	margin : 12px;
+}
+
+table.formhold {
+	width: 100%;
+	margin:0;
+	padding:0;
+	padding-left: 20px;
+}
+#tdlabel {
+	padding : 5px;
+	padding-left : 0;
+	font: bold 12px Arial, sans-serif;
+	color: #777;
+}
+#tdinput { padding: 4px; }
+
+
+#ipacct_ver {
+	float:left;
+	margin-left: 50px;
+	margin-top: 60px;
+	font: bold 10px Arial, Tahoma, Sans-serif;
+	color:#999;
+}
+#sys_stats {
+	float:right;
+	margin-top: 0px;
+	margin-right: 0px;
+	font: italic 10px Arial, Tahoma, Sans-serif;
+	color:#999;
+}
+#logdata {
+	font: normal 10px Arial, Tahoma, Sans-serif;
+	color:#7c7a59;
+	text-align: left;
+}
+.desc {
+	font: italic 9px Arial, Tahoma, Sans-serif;
+	color:#7c7a59;
+}
+#logwin {
+	font: normal 10px Arial, Tahoma, Sans-serif;
+	color: #aaa;
+	background: #111;
+	padding-top: 15px;
+	padding-left: 15px;
+}
+
+
+/* Content */
+
+#contentwrap {
+	width: 935px;
+	margin: 0 auto;
+}
+
+#ctop {
+	background: url(../images/ctop.png) center no-repeat;
+	height: 28px;
+}
+
+
+#content-wrap-bottom {
+	background: url(../images/cbott.png) center no-repeat;
+	height: 28px;
+	text-align: center;
+	font : bold 10px Arial, Sans-serif;
+	color : #444;
+}
+
+#content {
+	width: 905px;
+	padding: 15px 15px 0;
+}
+#login {
+	width: 500px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+#form-holder-right {
+	width: 440px;
+	margin: 0 auto;
+	float: right;
+}
+#form-holder-left {
+	width: 440px;
+	margin: 0 auto;
+	float: left;
+}
+
+/* Images */
+
+img { border: 0; }
+
+img.float-right {
+	margin : 5px 0 10px 10px;
+	padding: 2px;
+}
+
+img.float-left {
+	margin : 5px 10px 10px 0;
+	padding: 2px;
+}
+
+/* Forms and Text Fields */
+
+form {
+	margin : 10px;
+	margin-bottom: 20px;
+	padding : 5px;
+	padding-bottom: 10px;
+	border : 1px solid #333;
+	background-color : #111;
+}
+
+input {
+	padding : 0;
+	margin:0;
+	border : 1px solid #333;
+	font : normal 10px Arial, sans-serif;
+	color : #ccc;
+	background-color : #222;
+}
+input.txt{ width:120px; height:16px;}
+input.num{ width:60px; height:16px;}
+
+select {
+	border : 1px solid #333;
+	padding: 1px 5px 1px 5px;
+	color : #ccc;
+	font : normal 10px Arial, sans-serif;
+	background-color: #222;
+	overflow: hidden;
+}
+select option { background-color : #222; padding-right:15px; }
+
+textarea {
+	width : 300px;
+	padding : 2px;
+	font : normal 10px Arial, sans-serif;
+	border : 1px solid #333;
+	background-color: #222;
+	height : 100px;
+	display : block;
+	color : #ddd;
+}
+
+input.button {
+	margin : 0;
+	font: bold 12px Arial, sans-serif;
+	border: 1px solid #692FAC;
+	padding : 2px 3px;
+	background : #111;
+	color : #555;
+	float: right;
+	width:120px;
+	height:26px;
+}
+input.button:hover { 
+	color : #8f77ab;
+}
+input.logoimg {
+	font: bold 12px Arial, sans-serif;
+	border: 1px solid #692FAC;
+	padding : 2px;
+	background : #222;
+	color : #ccc;
+	height:26px;
+}
+#psubmit { text-align: right; }
+
+.clearfix {
+	clear: both;
+	overflow: hidden;
+}
+
+/* Nav */
+
+
+.navtab {
+	position: relative;
+	width: 935px;
+	margin: 0 auto;
+	height: 25px;
+	background: #222;
+	padding : 0;
+	list-style-type: none;
+	font: bold 12px/25px Verdana, Arial, Tahoma, Sans-serif;
+}
+.navtab li { display: inline; margin: 0;}
+.navtab li a {
+	display: block;
+	float: right;
+	padding: 0 10px;
+	color: #E5E5E5;
+	border-left: 1px #000 solid;
+	text-decoration: none;
+}
+.navtab li a:hover { background: #692FAC;}
+.navtab li.selected a { background: #692FAC;}
+
+.navtab li a:active{ background: #692FAC;}
+#submenu {
+	width: 935px;
+	height: 25px;
+	margin: 0 auto;
+	padding : 0;
+	margin-top: 12px;
+	font-size: 10px;
+}
+.submenustyle { width: 935px; display: none;}
+.submenustyle a {
+	display: block;
+	text-decoration: none;
+	float: right;
+	padding: 0 10px;
+	color: #E5E5E5;
+}
+.submenustyle a:hover { color: #692FAC; }

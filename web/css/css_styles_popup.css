@@ -1,0 +1,118 @@
+* {
+margin: 0px;
+padding: 0px;
+}
+body {
+	background: #ccc;
+	text-align: justify;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000;
+}
+a {
+	text-decoration: none;
+	color: #ff4f4f;
+}
+table {
+	border: 0;
+	padding : 0 15px;
+}
+table.formhold {
+	width: 100%;
+}
+h1.data_header {
+	font: bold 12px Arial, Tahoma, Sans-serif;
+	color: #777;
+	border: 2px solid #692FAC;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	text-transform: uppercase;
+	margin : 12px;
+}
+form {
+	margin : 10px;
+	padding : 5px;
+	padding-bottom: 15px;
+	border : 1px solid #777;
+	background-color : #fff;
+}
+
+#tdlabel {
+	padding : 5px;
+	padding-left : 0;
+	font: bold 12px Arial, sans-serif;
+	color: #444;
+}
+#tdinput { 
+	padding-left: 10px; 
+	font: normal 10px Arial, sans-serif;
+	color: #444;	
+}
+
+#logdata {
+	font: normal 10px Arial, Tahoma, Sans-serif;
+	color:#777;
+}
+.desc {
+	font: italic 9px Arial, Tahoma, Sans-serif;
+	color:#777;
+}
+input {
+	padding : 0;
+	margin:0;
+	border : 1px solid #777;
+	font : normal 10px Arial, sans-serif;
+	color : #111;
+	background-color : #eee;
+	height:18px;
+	width:140px;
+}
+input.num{ width:60px; }
+
+select {
+	border : 1px solid #777;
+	min-width: 100px;
+	padding: 2px 5px 2px 5px;
+	color : #ccc;
+	font : normal 10px Arial, sans-serif;
+	background-color: transparent;
+	overflow: hidden;
+}
+select option { background-color : transparent; padding-right:15px; }
+
+textarea {
+	width : 300px;
+	padding : 2px;
+	font : normal 10px Arial, sans-serif;
+	border : 1px solid #333;
+	background-color: #eee;
+	height : 100px;
+	display : block;
+	color : #000;
+}
+
+input.button {
+	margin : 0;
+	font: bold 12px Arial, sans-serif;
+	border : 1px solid #333;
+	padding : 2px;
+	background-color : #eee;
+	color : #555;
+	float: right;
+	width:120px;
+	height:26px;
+}
+input.button:hover { 
+	color : #692FAC;
+}
+input.logoimg {
+	font: bold 12px Arial, sans-serif;
+	border: 1px solid #692FAC;
+	padding : 2px;
+	background-color : #222;
+	color : #ccc;
+	height:26px;
+}
+
+#psubmit { text-align: right; }
+
