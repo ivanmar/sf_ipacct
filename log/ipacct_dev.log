@@ -1277,3 +1277,702 @@ May 12 14:22:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2
 May 12 14:22:50 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 12.44 ms (1)
 May 12 14:22:50 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 6.40 ms (1)
 May 12 14:22:50 symfony [info] {sfWebResponse} Send content (43831 o)
+May 13 12:33:42 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:33:42 symfony [info] {myUser} Automatic user logout due to timeout
+May 13 12:33:42 symfony [info] {myUser} User is not authenticated
+May 13 12:33:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:33:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:33:42 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:33:42 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:33:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:33:42 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:33:42 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:33:42 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:33:42 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:33:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:33:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:33:42 symfony [info] {sfWebDebugLogger} Configuration 127.98 ms (9)
+May 13 12:33:42 symfony [info] {sfWebDebugLogger} Factories 92.09 ms (1)
+May 13 12:33:42 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 75.85 ms (1)
+May 13 12:33:42 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:33:42 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 16.34 ms (1)
+May 13 12:33:42 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 7.65 ms (1)
+May 13 12:33:42 symfony [info] {sfWebResponse} Send content (44095 o)
+May 13 12:34:15 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:34:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:34:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:34:15 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:34:15 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:34:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:34:15 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:34:15 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:34:15 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:34:15 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:34:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:34:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:34:15 symfony [info] {sfWebDebugLogger} Configuration 1.11 ms (9)
+May 13 12:34:15 symfony [info] {sfWebDebugLogger} Factories 13.03 ms (1)
+May 13 12:34:15 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 49.63 ms (1)
+May 13 12:34:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+May 13 12:34:15 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 12.33 ms (1)
+May 13 12:34:15 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 6.06 ms (1)
+May 13 12:34:15 symfony [info] {sfWebResponse} Send content (43388 o)
+May 13 12:34:19 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 13 12:34:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:34:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:34:19 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 13 12:34:19 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:34:19 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 13 12:34:19 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 13 12:34:19 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:34:19 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:34:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:34:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:34:19 symfony [info] {sfWebDebugLogger} Configuration 1.12 ms (9)
+May 13 12:34:19 symfony [info] {sfWebDebugLogger} Factories 12.20 ms (1)
+May 13 12:34:19 symfony [info] {sfWebDebugLogger} Action "isporg/index" 51.14 ms (1)
+May 13 12:34:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:34:19 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 13.09 ms (1)
+May 13 12:34:19 symfony [info] {sfWebResponse} Send content (33986 o)
+May 13 12:34:31 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/show/id/1 with parameters array (  'module' => 'isporg',  'action' => 'show',  'id' => '1',)
+May 13 12:34:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:34:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:34:31 symfony [info] {isporgActions} Call "isporgActions->executeShow()"
+May 13 12:34:31 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:34:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:34:31 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/showSuccess.php"
+May 13 12:34:31 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:34:31 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:34:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:34:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:34:31 symfony [info] {sfWebDebugLogger} Configuration 1.39 ms (9)
+May 13 12:34:31 symfony [info] {sfWebDebugLogger} Factories 18.24 ms (1)
+May 13 12:34:31 symfony [info] {sfWebDebugLogger} Action "isporg/show" 46.07 ms (1)
+May 13 12:34:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:34:31 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/show" 12.78 ms (1)
+May 13 12:34:32 symfony [info] {sfWebResponse} Send content (34523 o)
+May 13 12:34:34 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:34:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:34:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:34:34 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:34:34 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:34:34 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:34:34 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:34:34 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:34:34 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:34:34 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:34:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:34:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:34:34 symfony [info] {sfWebDebugLogger} Configuration 1.24 ms (9)
+May 13 12:34:34 symfony [info] {sfWebDebugLogger} Factories 19.27 ms (1)
+May 13 12:34:34 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 49.74 ms (1)
+May 13 12:34:34 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:34:34 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 13.01 ms (1)
+May 13 12:34:34 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 6.40 ms (1)
+May 13 12:34:34 symfony [info] {sfWebResponse} Send content (43356 o)
+May 13 12:37:24 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:37:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:37:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:37:24 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:37:24 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:37:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:37:24 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:37:24 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:37:24 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:37:24 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:37:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:37:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:37:24 symfony [info] {sfWebDebugLogger} Configuration 1.25 ms (9)
+May 13 12:37:24 symfony [info] {sfWebDebugLogger} Factories 16.21 ms (1)
+May 13 12:37:24 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 46.30 ms (1)
+May 13 12:37:24 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:37:24 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 13.22 ms (1)
+May 13 12:37:24 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 6.44 ms (1)
+May 13 12:37:24 symfony [info] {sfWebResponse} Send content (43388 o)
+May 13 12:37:25 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:37:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:37:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:37:25 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:37:25 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:37:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:37:25 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:37:25 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:37:25 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:37:25 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:37:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:37:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:37:25 symfony [info] {sfWebDebugLogger} Configuration 1.43 ms (9)
+May 13 12:37:25 symfony [info] {sfWebDebugLogger} Factories 12.31 ms (1)
+May 13 12:37:25 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 61.57 ms (1)
+May 13 12:37:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:37:25 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 13.06 ms (1)
+May 13 12:37:25 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 6.28 ms (1)
+May 13 12:37:25 symfony [info] {sfWebResponse} Send content (43388 o)
+May 13 12:37:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:37:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:37:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:37:39 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:37:39 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:37:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:37:39 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:37:39 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:37:39 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:37:39 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:37:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:37:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:37:39 symfony [info] {sfWebDebugLogger} Configuration 1.34 ms (9)
+May 13 12:37:39 symfony [info] {sfWebDebugLogger} Factories 16.24 ms (1)
+May 13 12:37:39 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 66.61 ms (1)
+May 13 12:37:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:37:39 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 13.86 ms (1)
+May 13 12:37:39 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 6.09 ms (1)
+May 13 12:37:39 symfony [info] {sfWebResponse} Send content (43388 o)
+May 13 12:37:53 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:37:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:37:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:37:53 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:37:53 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:37:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:37:53 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:37:53 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:37:53 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:37:53 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:37:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:37:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:37:53 symfony [info] {sfWebDebugLogger} Configuration 1.18 ms (9)
+May 13 12:37:53 symfony [info] {sfWebDebugLogger} Factories 18.30 ms (1)
+May 13 12:37:53 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 50.44 ms (1)
+May 13 12:37:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:37:53 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 19.04 ms (1)
+May 13 12:37:53 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 9.84 ms (1)
+May 13 12:37:53 symfony [info] {sfWebResponse} Send content (43388 o)
+May 13 12:37:54 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:37:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:37:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:37:54 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:37:54 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:37:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:37:54 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:37:54 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:37:54 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:37:54 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:37:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:37:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:37:54 symfony [info] {sfWebDebugLogger} Configuration 1.40 ms (9)
+May 13 12:37:54 symfony [info] {sfWebDebugLogger} Factories 17.99 ms (1)
+May 13 12:37:54 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 65.63 ms (1)
+May 13 12:37:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:37:54 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 18.06 ms (1)
+May 13 12:37:54 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 8.97 ms (1)
+May 13 12:37:54 symfony [info] {sfWebResponse} Send content (43388 o)
+May 13 12:39:43 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:39:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:39:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:39:43 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:39:43 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:39:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:39:43 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:39:43 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:39:43 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:39:43 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:39:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:39:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:39:43 symfony [info] {sfWebDebugLogger} Configuration 1.33 ms (9)
+May 13 12:39:43 symfony [info] {sfWebDebugLogger} Factories 19.57 ms (1)
+May 13 12:39:43 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 47.41 ms (1)
+May 13 12:39:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:39:43 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 12.55 ms (1)
+May 13 12:39:43 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 6.06 ms (1)
+May 13 12:39:43 symfony [info] {sfWebResponse} Send content (43388 o)
+May 13 12:40:10 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:40:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:40:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:40:10 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:40:10 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:40:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:40:10 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:40:10 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:40:10 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:40:10 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:40:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:40:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:40:10 symfony [info] {sfWebDebugLogger} Configuration 1.36 ms (9)
+May 13 12:40:10 symfony [info] {sfWebDebugLogger} Factories 19.52 ms (1)
+May 13 12:40:10 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 62.27 ms (1)
+May 13 12:40:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:40:10 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 12.56 ms (1)
+May 13 12:40:10 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 6.17 ms (1)
+May 13 12:40:10 symfony [info] {sfWebResponse} Send content (43387 o)
+May 13 12:41:08 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:41:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:41:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:41:08 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:41:08 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:41:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:41:08 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:41:08 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:41:08 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:41:08 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:41:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:41:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:41:08 symfony [info] {sfWebDebugLogger} Configuration 1.39 ms (9)
+May 13 12:41:08 symfony [info] {sfWebDebugLogger} Factories 18.09 ms (1)
+May 13 12:41:08 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 73.69 ms (1)
+May 13 12:41:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:41:08 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 18.14 ms (1)
+May 13 12:41:08 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 9.03 ms (1)
+May 13 12:41:08 symfony [info] {sfWebResponse} Send content (43388 o)
+May 13 12:41:12 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:41:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:41:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:41:12 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:41:12 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:41:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:41:12 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:41:12 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:41:12 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:41:12 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:41:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:41:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:41:12 symfony [info] {sfWebDebugLogger} Configuration 1.20 ms (9)
+May 13 12:41:12 symfony [info] {sfWebDebugLogger} Factories 20.82 ms (1)
+May 13 12:41:12 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 49.37 ms (1)
+May 13 12:41:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:41:12 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 13.03 ms (1)
+May 13 12:41:12 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 6.48 ms (1)
+May 13 12:41:12 symfony [info] {sfWebResponse} Send content (43388 o)
+May 13 12:41:20 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:41:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:41:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:41:20 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:41:20 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:41:20 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:41:20 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:41:20 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:41:20 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:41:20 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:41:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:41:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:41:20 symfony [info] {sfWebDebugLogger} Configuration 1.46 ms (9)
+May 13 12:41:20 symfony [info] {sfWebDebugLogger} Factories 22.81 ms (1)
+May 13 12:41:20 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 58.18 ms (1)
+May 13 12:41:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:41:20 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 14.43 ms (1)
+May 13 12:41:20 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 6.19 ms (1)
+May 13 12:41:20 symfony [info] {sfWebResponse} Send content (43388 o)
+May 13 12:41:56 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:41:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:41:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:41:56 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:41:56 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:41:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:41:56 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:41:56 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:41:56 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:41:56 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:41:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:41:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:41:56 symfony [info] {sfWebDebugLogger} Configuration 1.29 ms (9)
+May 13 12:41:56 symfony [info] {sfWebDebugLogger} Factories 13.03 ms (1)
+May 13 12:41:56 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 53.30 ms (1)
+May 13 12:41:56 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:41:56 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 20.00 ms (1)
+May 13 12:41:56 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 9.82 ms (1)
+May 13 12:41:56 symfony [info] {sfWebResponse} Send content (43388 o)
+May 13 12:42:27 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:42:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:42:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:42:27 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:42:27 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:42:27 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:42:27 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:42:27 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:42:27 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:42:27 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:42:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:42:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:42:27 symfony [info] {sfWebDebugLogger} Configuration 1.41 ms (9)
+May 13 12:42:27 symfony [info] {sfWebDebugLogger} Factories 19.06 ms (1)
+May 13 12:42:27 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 72.67 ms (1)
+May 13 12:42:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:42:27 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 14.06 ms (1)
+May 13 12:42:27 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 7.14 ms (1)
+May 13 12:42:27 symfony [info] {sfWebResponse} Send content (43387 o)
+May 13 12:43:04 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:43:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:43:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:43:04 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:43:04 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:43:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:43:04 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:43:04 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:43:04 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:43:04 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:43:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:43:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:43:04 symfony [info] {sfWebDebugLogger} Configuration 1.40 ms (9)
+May 13 12:43:04 symfony [info] {sfWebDebugLogger} Factories 12.92 ms (1)
+May 13 12:43:04 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 63.52 ms (1)
+May 13 12:43:04 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:43:04 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 18.21 ms (1)
+May 13 12:43:04 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 9.07 ms (1)
+May 13 12:43:04 symfony [info] {sfWebResponse} Send content (43387 o)
+May 13 12:49:17 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:49:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:49:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:49:17 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:49:18 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:49:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:49:18 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:49:18 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:49:18 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:49:18 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:49:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:49:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:49:18 symfony [info] {sfWebDebugLogger} Configuration 1.30 ms (9)
+May 13 12:49:18 symfony [info] {sfWebDebugLogger} Factories 12.81 ms (1)
+May 13 12:49:18 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 63.28 ms (1)
+May 13 12:49:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:49:18 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 16.86 ms (1)
+May 13 12:49:18 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 8.44 ms (1)
+May 13 12:49:18 symfony [info] {sfWebResponse} Send content (43319 o)
+May 13 12:52:57 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:52:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:52:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:52:57 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:52:57 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:52:57 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:52:57 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:52:57 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:52:57 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:52:57 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:52:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:52:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:52:57 symfony [info] {sfWebDebugLogger} Configuration 1.30 ms (9)
+May 13 12:52:57 symfony [info] {sfWebDebugLogger} Factories 20.30 ms (1)
+May 13 12:52:57 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 50.73 ms (1)
+May 13 12:52:57 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+May 13 12:52:57 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 12.87 ms (1)
+May 13 12:52:57 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 6.36 ms (1)
+May 13 12:52:57 symfony [info] {sfWebResponse} Send content (43263 o)
+May 13 12:53:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:53:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:53:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:53:29 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:53:29 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:53:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:53:29 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:53:29 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:53:29 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:53:29 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:53:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:53:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:53:29 symfony [info] {sfWebDebugLogger} Configuration 1.34 ms (9)
+May 13 12:53:29 symfony [info] {sfWebDebugLogger} Factories 13.98 ms (1)
+May 13 12:53:29 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 65.42 ms (1)
+May 13 12:53:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:53:29 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 18.03 ms (1)
+May 13 12:53:29 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 8.82 ms (1)
+May 13 12:53:29 symfony [info] {sfWebResponse} Send content (43263 o)
+May 13 12:55:16 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:55:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:55:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:55:16 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:55:16 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:55:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:55:17 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:55:17 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:55:17 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:55:17 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:55:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:55:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:55:17 symfony [info] {sfWebDebugLogger} Configuration 1.35 ms (9)
+May 13 12:55:17 symfony [info] {sfWebDebugLogger} Factories 12.95 ms (1)
+May 13 12:55:17 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 63.28 ms (1)
+May 13 12:55:17 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:55:17 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 18.50 ms (1)
+May 13 12:55:17 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 9.34 ms (1)
+May 13 12:55:17 symfony [info] {sfWebResponse} Send content (43262 o)
+May 13 12:58:00 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:58:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:58:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:58:00 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:58:00 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:58:00 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:58:00 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:58:00 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:58:00 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:58:00 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:58:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:58:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:58:00 symfony [info] {sfWebDebugLogger} Configuration 1.47 ms (9)
+May 13 12:58:00 symfony [info] {sfWebDebugLogger} Factories 19.08 ms (1)
+May 13 12:58:00 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 66.22 ms (1)
+May 13 12:58:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:58:00 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 14.93 ms (1)
+May 13 12:58:00 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 6.55 ms (1)
+May 13 12:58:00 symfony [info] {sfWebResponse} Send content (43263 o)
+May 13 12:58:02 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:58:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:58:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:58:02 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:58:02 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:58:02 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:58:02 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:58:02 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:58:02 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:58:02 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:58:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:58:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:58:02 symfony [info] {sfWebDebugLogger} Configuration 1.26 ms (9)
+May 13 12:58:02 symfony [info] {sfWebDebugLogger} Factories 15.68 ms (1)
+May 13 12:58:02 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 45.86 ms (1)
+May 13 12:58:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:58:02 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 12.88 ms (1)
+May 13 12:58:02 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 6.25 ms (1)
+May 13 12:58:02 symfony [info] {sfWebResponse} Send content (43263 o)
+May 13 12:58:17 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:58:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:58:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:58:17 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:58:17 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:58:17 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:58:17 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:58:17 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:58:17 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:58:17 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:58:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:58:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:58:17 symfony [info] {sfWebDebugLogger} Configuration 1.24 ms (9)
+May 13 12:58:17 symfony [info] {sfWebDebugLogger} Factories 24.04 ms (1)
+May 13 12:58:17 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 50.37 ms (1)
+May 13 12:58:17 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:58:17 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 13.29 ms (1)
+May 13 12:58:17 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 6.76 ms (1)
+May 13 12:58:17 symfony [info] {sfWebResponse} Send content (43263 o)
+May 13 12:58:18 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:58:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:58:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:58:18 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:58:18 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:58:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:58:18 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:58:18 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:58:18 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:58:18 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:58:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:58:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:58:18 symfony [info] {sfWebDebugLogger} Configuration 1.46 ms (9)
+May 13 12:58:18 symfony [info] {sfWebDebugLogger} Factories 23.41 ms (1)
+May 13 12:58:18 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 69.64 ms (1)
+May 13 12:58:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:58:18 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 12.63 ms (1)
+May 13 12:58:18 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 6.20 ms (1)
+May 13 12:58:18 symfony [info] {sfWebResponse} Send content (43262 o)
+May 13 12:58:37 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:58:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:58:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:58:38 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:58:38 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:58:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:58:38 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:58:38 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:58:38 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:58:38 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:58:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:58:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:58:38 symfony [info] {sfWebDebugLogger} Configuration 1.51 ms (9)
+May 13 12:58:38 symfony [info] {sfWebDebugLogger} Factories 17.52 ms (1)
+May 13 12:58:38 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 61.50 ms (1)
+May 13 12:58:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:58:38 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 18.79 ms (1)
+May 13 12:58:38 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 10.89 ms (1)
+May 13 12:58:38 symfony [info] {sfWebResponse} Send content (43264 o)
+May 13 12:58:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:58:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:58:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:58:39 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:58:39 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:58:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:58:39 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:58:39 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:58:39 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:58:39 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:58:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:58:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:58:39 symfony [info] {sfWebDebugLogger} Configuration 1.23 ms (9)
+May 13 12:58:39 symfony [info] {sfWebDebugLogger} Factories 12.54 ms (1)
+May 13 12:58:39 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 62.72 ms (1)
+May 13 12:58:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:58:39 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 12.21 ms (1)
+May 13 12:58:39 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 5.98 ms (1)
+May 13 12:58:39 symfony [info] {sfWebResponse} Send content (43263 o)
+May 13 12:58:58 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 12:58:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 12:58:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 12:58:58 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 12:58:58 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 12:58:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 12:58:58 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 12:58:58 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 12:58:58 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:58:58 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 12:58:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 12:58:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 12:58:58 symfony [info] {sfWebDebugLogger} Configuration 1.23 ms (9)
+May 13 12:58:58 symfony [info] {sfWebDebugLogger} Factories 17.98 ms (1)
+May 13 12:58:58 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 60.15 ms (1)
+May 13 12:58:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 12:58:58 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 12.89 ms (1)
+May 13 12:58:58 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 6.37 ms (1)
+May 13 12:58:58 symfony [info] {sfWebResponse} Send content (43263 o)
+May 13 13:02:25 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 13:02:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 13:02:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 13:02:25 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 13:02:25 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 13:02:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 13:02:25 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 13:02:25 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 13:02:25 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 13:02:25 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 13:02:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 13:02:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 13:02:25 symfony [info] {sfWebDebugLogger} Configuration 1.18 ms (9)
+May 13 13:02:25 symfony [info] {sfWebDebugLogger} Factories 15.83 ms (1)
+May 13 13:02:25 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 52.85 ms (1)
+May 13 13:02:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 13:02:25 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 13.24 ms (1)
+May 13 13:02:25 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 6.50 ms (1)
+May 13 13:02:25 symfony [info] {sfWebResponse} Send content (43263 o)
+May 13 13:02:26 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 13:02:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 13:02:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 13:02:26 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 13:02:26 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 13:02:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 13:02:26 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 13:02:26 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 13:02:26 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 13:02:26 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 13:02:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 13:02:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 13:02:26 symfony [info] {sfWebDebugLogger} Configuration 1.25 ms (9)
+May 13 13:02:26 symfony [info] {sfWebDebugLogger} Factories 12.35 ms (1)
+May 13 13:02:26 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 63.28 ms (1)
+May 13 13:02:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 13:02:26 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 12.86 ms (1)
+May 13 13:02:26 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 6.07 ms (1)
+May 13 13:02:26 symfony [info] {sfWebResponse} Send content (43263 o)
+May 13 13:02:35 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/update/id/1 with parameters array (  'module' => 'isporg',  'action' => 'update',  'id' => '1',)
+May 13 13:02:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 13:02:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 13:02:35 symfony [info] {isporgActions} Call "isporgActions->executeUpdate()"
+May 13 13:02:35 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 13:02:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 13:02:35 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/sf_ipacct/lib/vendor/symfony/lib/util/sfParameterHolder.class.php on line 53 (array_key_exists(): The first argument should be either a string or an integer)
+May 13 13:02:35 symfony [info] {isporgActions} Change template to "CURRENT/edit"
+May 13 13:02:35 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 13:02:35 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 13:02:35 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 13:02:35 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 13:02:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 13:02:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 13:02:35 symfony [info] {sfWebDebugLogger} Configuration 1.34 ms (9)
+May 13 13:02:35 symfony [info] {sfWebDebugLogger} Factories 14.92 ms (1)
+May 13 13:02:35 symfony [info] {sfWebDebugLogger} Action "isporg/update" 68.20 ms (1)
+May 13 13:02:35 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 13:02:35 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/update" 12.02 ms (1)
+May 13 13:02:35 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 5.91 ms (1)
+May 13 13:02:35 symfony [info] {sfWebResponse} Send content (44811 o)
+May 13 13:02:46 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /isporg with parameters array (  'module' => 'isporg',  'action' => 'index',)
+May 13 13:02:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 13:02:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 13:02:46 symfony [info] {isporgActions} Call "isporgActions->executeIndex()"
+May 13 13:02:46 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 13:02:46 symfony [info] {Doctrine_Connection_Pgsql} query : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a - ()
+May 13 13:02:46 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/indexSuccess.php"
+May 13 13:02:46 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 13:02:46 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 13:02:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 13:02:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 13:02:46 symfony [info] {sfWebDebugLogger} Configuration 1.66 ms (9)
+May 13 13:02:46 symfony [info] {sfWebDebugLogger} Factories 12.80 ms (1)
+May 13 13:02:46 symfony [info] {sfWebDebugLogger} Action "isporg/index" 45.45 ms (1)
+May 13 13:02:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 13:02:46 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/index" 7.82 ms (1)
+May 13 13:02:46 symfony [info] {sfWebResponse} Send content (33929 o)
+May 13 13:02:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/show/id/1 with parameters array (  'module' => 'isporg',  'action' => 'show',  'id' => '1',)
+May 13 13:02:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 13:02:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 13:02:51 symfony [info] {isporgActions} Call "isporgActions->executeShow()"
+May 13 13:02:51 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 13:02:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 13:02:51 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/showSuccess.php"
+May 13 13:02:51 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 13:02:51 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 13:02:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 13:02:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 13:02:51 symfony [info] {sfWebDebugLogger} Configuration 1.44 ms (9)
+May 13 13:02:51 symfony [info] {sfWebDebugLogger} Factories 12.49 ms (1)
+May 13 13:02:51 symfony [info] {sfWebDebugLogger} Action "isporg/show" 53.15 ms (1)
+May 13 13:02:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 13:02:51 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/show" 9.44 ms (1)
+May 13 13:02:51 symfony [info] {sfWebResponse} Send content (34464 o)
+May 13 13:02:54 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 13:02:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 13:02:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 13:02:54 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 13:02:54 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 13:02:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 13:02:54 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 13:02:54 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 13:02:54 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 13:02:54 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 13:02:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 13:02:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 13:02:54 symfony [info] {sfWebDebugLogger} Configuration 1.49 ms (9)
+May 13 13:02:54 symfony [info] {sfWebDebugLogger} Factories 12.44 ms (1)
+May 13 13:02:54 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 67.60 ms (1)
+May 13 13:02:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 13:02:54 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 12.98 ms (1)
+May 13 13:02:54 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 6.33 ms (1)
+May 13 13:02:54 symfony [info] {sfWebResponse} Send content (43229 o)
+May 13 13:03:30 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 13:03:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 13:03:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 13:03:30 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 13:03:30 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 13:03:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 13:03:30 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 13:03:30 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 13:03:30 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 13:03:30 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 13:03:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 13:03:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 13:03:30 symfony [info] {sfWebDebugLogger} Configuration 1.30 ms (9)
+May 13 13:03:30 symfony [info] {sfWebDebugLogger} Factories 17.76 ms (1)
+May 13 13:03:30 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 72.14 ms (1)
+May 13 13:03:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 13:03:30 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 15.17 ms (1)
+May 13 13:03:30 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 8.82 ms (1)
+May 13 13:03:30 symfony [info] {sfWebResponse} Send content (43263 o)
+May 13 13:03:31 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /isporg/edit/id/1 with parameters array (  'module' => 'isporg',  'action' => 'edit',  'id' => '1',)
+May 13 13:03:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 13 13:03:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 13 13:03:31 symfony [info] {isporgActions} Call "isporgActions->executeEdit()"
+May 13 13:03:31 symfony [info] {Doctrine_Connection_Pgsql} exec : SET NAMES 'UTF8' - ()
+May 13 13:03:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT a.id AS a__id, a.name AS a__name, a.address AS a__address, a.city AS a__city, a.zipcode AS a__zipcode, a.phone AS a__phone, a.billinginfo AS a__billinginfo, a.contactname AS a__contactname, a.email_report AS a__email_report, a.email_nasadmin AS a__email_nasadmin, a.pst_commission AS a__pst_commission, a.radlocation AS a__radlocation FROM acc_isporg a WHERE (a.id = ?) LIMIT 1 - (1)
+May 13 13:03:31 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/editSuccess.php"
+May 13 13:03:31 symfony [info] {sfPartialView} Render "/var/www/sf_ipacct/apps/ipacct/modules/isporg/templates/_form.php"
+May 13 13:03:31 symfony [info] {sfPHPView} Decorate content with "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 13:03:31 symfony [info] {sfPHPView} Render "/var/www/sf_ipacct/apps/ipacct/templates/layout.php"
+May 13 13:03:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 13 13:03:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 13 13:03:31 symfony [info] {sfWebDebugLogger} Configuration 1.27 ms (9)
+May 13 13:03:31 symfony [info] {sfWebDebugLogger} Factories 14.15 ms (1)
+May 13 13:03:31 symfony [info] {sfWebDebugLogger} Action "isporg/edit" 62.21 ms (1)
+May 13 13:03:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+May 13 13:03:31 symfony [info] {sfWebDebugLogger} View "Success" for "isporg/edit" 12.77 ms (1)
+May 13 13:03:31 symfony [info] {sfWebDebugLogger} Partial "isporg/_form" 6.29 ms (1)
+May 13 13:03:31 symfony [info] {sfWebResponse} Send content (43263 o)

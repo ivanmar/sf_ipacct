@@ -10,6 +10,15 @@ a { 	text-decoration: none;
 
 table { border: 0; padding : 0 15px; }
 
+h1 {
+	font: bold 12px Arial, Tahoma, Sans-serif;
+	color: #777;
+	border: 1px solid #692FAC;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	text-transform: uppercase;
+}
 #header{
 	height: 75px;
 	width: 935px;
@@ -19,8 +28,8 @@ table { border: 0; padding : 0 15px; }
 
 #wrap {
 	width: 935px;
-	margin: 0 auto;
-	padding: 0;
+	margin: 0;
+	padding-top: 10px;
 	background: center url(../images/cmid.png) repeat-y;
 }
 
@@ -48,16 +57,6 @@ tr.data_rows {
 tr.data_rows:hover {
 	color: #fff;
 	background: #585858;
-}
-h1.data_header {
-	font: bold 12px Arial, Tahoma, Sans-serif;
-	color: #777;
-	border: 1px solid #692FAC;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	text-align: center;
-	text-transform: uppercase;
-	margin : 12px;
 }
 
 table.formhold {
@@ -117,6 +116,8 @@ table.formhold {
 #ctop {
 	background: url(../images/ctop.png) center no-repeat;
 	height: 28px;
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -128,7 +129,7 @@ table.formhold {
 	color : #444;
 }
 
-#content {
+.content {
 	width: 905px;
 	padding: 0 15px 0;
 }
@@ -174,10 +175,10 @@ img.float-left {
 form {
 	margin : 10px;
 	margin-bottom: 20px;
-	padding : 5px;
-	padding-bottom: 10px;
 	border : 1px solid #333;
 	background-color : #111;
+	padding : 5px;
+	padding-bottom: 10px;
 }
 
 input {
@@ -212,7 +213,7 @@ textarea {
 	color : #ddd;
 }
 
-input.button {
+button {
 	margin : 0;
 	font: bold 12px Arial, sans-serif;
 	border: 1px solid #692FAC;
@@ -223,7 +224,7 @@ input.button {
 	width:120px;
 	height:26px;
 }
-input.button:hover { 
+button:hover { 
 	color : #8f77ab;
 }
 input.logoimg {
@@ -234,7 +235,6 @@ input.logoimg {
 	color : #ccc;
 	height:26px;
 }
-#psubmit { text-align: right; }
 
 .clearfix {
 	clear: both;

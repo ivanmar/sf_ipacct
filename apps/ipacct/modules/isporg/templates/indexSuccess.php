@@ -1,6 +1,6 @@
 <div id='content_menu'> <a href="<?php echo url_for('isporg/new') ?>"> new </a> </div>
 
-<h1 class='data_header'> ISPorg list </h1>
+<h1> ISPorg list </h1>
 
 <table class='data'>
   <thead>

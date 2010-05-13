@@ -70,24 +70,10 @@
 
 <script type="text/javascript">initalizetab("maintab")</script>
 
-
-      <div id="content">
-        <?php if ($sf_user->hasFlash('notice')): ?>
-          <div class="flash_notice">
-            <?php echo $sf_user->getFlash('notice') ?>
-          </div>
-        <?php endif ?>
- 
-        <?php if ($sf_user->hasFlash('error')): ?>
-          <div class="flash_error">
-            <?php echo $sf_user->getFlash('error') ?>
-          </div>
-        <?php endif ?>
  
         <div class="content">
           <?php echo $sf_content ?>
         </div>
-      </div>
 
         <p>&nbsp;</p>
       </div>
